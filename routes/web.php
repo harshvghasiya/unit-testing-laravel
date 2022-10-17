@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::any('/logi', 'UserController@create')->name('admin.login');
+Route::any('/login', 'UserController@create')->name('admin.login');
 Route::any('/register', 'UserController@register')->name('admin.register');
 Route::any('/logout', 'UserController@logout')->name('admin.logout');
 Route::any('/store', 'UserController@store')->name('admin.user.store');
