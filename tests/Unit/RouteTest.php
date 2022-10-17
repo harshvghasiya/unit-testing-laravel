@@ -16,10 +16,10 @@ class RouteTest extends TestCase
     public function test_example()
     {
         
-        // $res = $this->get('/');
-        // $res->assertStatus(200);
+        $res = $this->get('/');
+        $res->assertStatus(200);
 
-        // $rese = $this->post('/store');
-        // $rese->assertStatus(200);
+        $rese = $this->post('/store');
+        $rese->assertStatus(200);
     }
 }
